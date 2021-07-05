@@ -52,10 +52,4 @@ $(function() {
             }
         }
     })
-
-    // INTERNATIONAL PHONE
-    $("#phone").intlTelInput({
-        separateDialCode:true,
-        onlyCountries: ['hk','lu','sg','gb','us','ie','au','nz','ca','za','ng','de','fr','no','fi','se','dk','it','nl','pl','es','be','at','ch','pt','pk'],
-    });
 })
