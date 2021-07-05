@@ -9,6 +9,13 @@
         border-radius: 8px;
         padding: 20px;
         min-height: 220px;
+        transition: 0.5s;
+    }
+
+    &_body:hover
+    {
+        box-shadow: none;
+        transition: 0.5s;
     }
 
     &_title
@@ -20,20 +27,15 @@
 
     &_icon
     {
-        width: 40px;
-        height: 50px;
-        display: inline-block;
-
-        svg
+        img
         {
-            fill: $secondary-color;
+            width: 80px;
         }
     }
 
     &_title
     {
         font-weight: 500;
-        margin-top: 15px;
     }
 
     &_desc
