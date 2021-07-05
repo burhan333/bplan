@@ -1,0 +1,144 @@
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    flex-wrap: wrap;
+
+    &_logo
+    {
+        img
+        {
+            width: 50px;
+        }
+    }
+
+    &_nav-mob
+    {
+        display: none;
+    }
+
+    &_nav
+    {
+        ul
+        {
+            margin-bottom: 0;
+            padding: 0;
+        }
+
+        li
+        {
+            display: inline-block;
+            margin-left: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        a
+        {
+            color: black;
+        }
+
+        a:hover
+        {
+            color: $secondary-color;
+        }
+
+        &-active
+        {
+            color: $secondary-color !important;
+        }
+    }
+
+    &_nav-child
+    {
+        display: none;
+        position: absolute;
+        width: 300px;
+        border: 1px solid #efefef;
+        padding: 5px !important;
+        border-radius: 5px;
+        z-index: 1;
+        background-color: white;
+
+        li
+        {
+            margin-bottom: 5px;
+            margin-top: 5px;
+            display: block;
+        }
+    }
+}
+
+#menu-icon 
+{
+    display: none;
+}
+
+@media (min-width: 992px)
+{
+    .header_nav li:hover .header_nav-child
+    {
+        display: block;
+    }
+}
+
+@media (max-width: 991px)
+{
+    .header
+    {
+        &_nav
+        {
+            display: none;
+
+            width: 100%;
+
+            ul
+            {
+                margin-top: 20px;
+            }
+
+            li
+            {
+                margin-left: 0;
+                display: block;
+                margin-bottom: 10px;
+                
+                i
+                {
+                    margin-left: 15px;
+                    padding: 5px;
+                }
+            }
+
+            &-child
+            {
+                position: relative;
+                border: none;
+                margin-top: 0px !important;
+                margin-left: 20px;
+            }
+
+            &-child-active
+            {
+                display: block;
+            }
+        }
+
+        &_nav-mob-active
+        {
+            display: block;
+        }
+    }
+
+    #menu-icon 
+    {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        font-size: 25px;
+        display: block;
+    }
+}

@@ -1,0 +1,19 @@
+// BASE
+@import './partials/base/typography';
+@import './partials/base/general';
+
+// LAYOUT
+@import './partials/layout/header';
+@import './partials/layout/slider';
+@import './partials/layout/footer';
+
+// COMPONENT
+@import './partials/component/service';
+@import './partials/component/modal';
+@import './partials/component/about';
+@import './partials/component/offer';
+@import './partials/component/subscribe';
+@import './partials/component/price';
+@import './partials/component/testimonial';
+@import './partials/component/client';
+@import './partials/component/contact';

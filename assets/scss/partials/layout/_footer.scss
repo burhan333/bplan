@@ -1,0 +1,108 @@
+.footer
+{
+    background: #686697;
+    padding: 30px 0;
+    margin-top: 100px;
+
+    &_logo
+    {
+        width: 50px;
+    }
+
+    p
+    {
+        font-size: 13px;
+        line-height: 25px;
+        margin-top: 15px;
+        color: white;
+        text-align: justify;
+    }
+
+    &_title
+    {
+        color: white;
+        margin-bottom: 45px;
+    }
+
+    a
+    {
+        color: white;
+    }
+
+    &_company
+    {
+        margin-left: 80px;
+
+        a
+        {
+            margin-bottom: 12px;
+            display: inline-block;
+        }   
+    }
+
+    &_support
+    {
+        margin-left: 30px;
+
+        a
+        {
+            margin-bottom: 12px;
+            display: inline-block;
+        }   
+    }
+
+    input
+    {
+        font-size: 13px;
+        padding: 8px 8px 8px 15px;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        outline: none;
+    }
+
+    button
+    {
+        position: absolute;
+        right: 0;
+        border: none;
+        background: $secondary-color;
+        color: white;
+        padding: 6px 15px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+
+    &_icons
+    {
+        display: flex;
+        margin-top: 15px;
+        
+        a
+        {
+            width: 100px;
+            display: inline-block;
+        }
+    }
+}
+
+.copyright
+{
+    text-align: center;
+    background: $primary-color;
+    padding-top: 15px;
+    padding-bottom: 1px;
+}
+
+@media (max-width: 991px)
+{
+    .footer 
+    {
+        padding: 30px 8px;
+
+        &_company, &_support
+        {
+            margin: 0;
+        }
+    }
+}

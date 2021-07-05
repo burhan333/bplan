@@ -1,0 +1,54 @@
+.price
+{
+    margin-top: 100px;
+
+    &_head
+    {
+        text-align: center;
+    }
+
+    &_body
+    {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &_card
+    {
+        margin: 20px;
+        text-align: center;
+        padding: 40px 50px;
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+        transition: 0.5s;
+    }
+
+    &_card:hover
+    {
+        box-shadow: none;
+        transition: 0.5s;
+    }
+    
+    &_amount
+    {
+        span
+        {
+            color: $secondary-color;
+            font-size: 30px;
+            font-weight: 500;
+        }
+    }
+
+    a
+    {
+        background: transparent;
+        border: 2px solid $secondary-color;
+        color: $light-gray;
+    }
+
+    a:hover
+    {
+        background: $secondary-color;
+        color: white;
+    }
+}

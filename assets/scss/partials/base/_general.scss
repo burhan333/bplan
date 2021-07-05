@@ -1,0 +1,71 @@
+.btn-small
+{
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    border: none;
+    background: $secondary-color;
+    padding: 12px 35px;
+    display: inline-block;
+}
+
+.btn-large
+{
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    border: none;
+    background: $secondary-color;
+    padding: 12px 50px;
+    display: inline-block;
+}
+
+.btn-half
+{
+    border-radius: 50px;
+}
+
+.btn-full
+{
+    border-radius: 10px;
+}
+
+a
+{
+    font-size: 13px;
+}
+
+a:hover
+{
+    text-decoration: none;
+    color: white;
+}
+
+p
+{
+    color: $light-gray;
+    font-size: 13px;
+}
+
+.title-small
+{
+    color: $secondary-color;
+    font-weight: 600;
+}
+
+.title-large 
+{
+    font-size: 35px;
+    font-weight: 500;
+    color: black;
+    line-height: 40px;
+}
+
+@media (max-width: 991px)
+{
+    .title-large
+    {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}

@@ -1,0 +1,75 @@
+.about
+{    
+    img
+    {
+        max-width: 100%;
+    }
+
+    .card
+    {
+        margin-bottom: 20px;
+        border: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        
+        &-header
+        {
+            background: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 20px;
+        }
+
+        &-header:hover
+        {
+            background: $secondary-color;
+        }
+
+        &-header:hover button
+        {
+            color: white;
+        }
+
+        &-header:hover button::before
+        {
+            background-color: white;
+        }
+
+        &-body
+        {
+            font-size: 14px;
+            padding-top: 0;
+        }
+
+        button
+        {
+            padding-left: 20px;
+            color: gray;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        button::before
+        {
+            content: '';
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            background-color: $light-gray;
+            border-radius: 10px;
+            top: 21px;
+            left: 15px;
+        }
+    }
+}
+
+@media (max-width: 991px)
+{
+    .about
+    {        
+        img
+        {
+            display: none;
+        }
+    }
+}

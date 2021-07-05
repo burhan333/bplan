@@ -1,0 +1,54 @@
+.test
+{
+    margin-top: 100px;
+
+    &_desc, &_post
+    {
+        font-size: 12px;
+    }
+
+    &_name
+    {
+        font-weight: 600;
+        color: black;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    &_card
+    {
+        padding: 10px;
+        box-shadow: 0 0 10px 0px rgba(0,0,0,0.1);
+        text-align: center;
+        margin: 10px;
+        border-radius: 10px;
+        max-width: 310px;
+
+        img
+        {
+            width: 50px !important;
+            border-radius: 50px;
+            height: 50px;
+            object-fit: cover;
+            margin: auto;
+        }
+    }
+}
+
+@media (max-width: 991px)
+{
+    .test
+    {
+        &_card
+        {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .title-small 
+        {
+            margin-top: 50px;
+        }
+    }
+}
+
